@@ -1,0 +1,8 @@
+alc = input('Digite algo: ')
+print('O tipo primitivo é', type(alc))
+print('é UM ALPHA NUMERO??', alc.isalnum())
+print('É ALFABETICO?', alc.isalpha())
+print(alc.__init_subclass__())
+print('É UM DIGITO?', alc.isdigit())
+print('É NUMERICO?', alc.isnumeric())
+print('ESTA EM CAPSLOCK?', alc.isupper())

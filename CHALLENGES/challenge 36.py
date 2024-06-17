@@ -1,0 +1,18 @@
+print("=-" *19)
+print('BEM VINDO A GUINTINHO FINANCIAMENTOS!')
+print('=-'*19)
+imovel = float(input('Qual é o valor do imovel que você deseja comprar? R$'))
+salario = float(input('Qual a sua renda mensal? R$'))
+tempo = int(input('Em quantos anos você pretende pagar o seu imovel? '))
+parcelas = imovel // (tempo * 12)
+porcentagem = (salario * 30 // 100)
+if porcentagem <=30:
+    print('=-'*19)
+    print('Parabens! Seu emprestimo foi aprovado! Você pagara {}% do seu salario por {} meses '.format(porcentagem, tempo))
+    print('E o valor da sua parcela será de: R${:.2f}'.format(parcelas))
+    print('=-'*19)
+elif porcentagem >=31:
+    print('=-'*19)
+    print('Infelizmente GUINTINHO FINANCIAMENTOS não pode aprovar seu emprestimo!')
+    print('O valor da parcela simulada ficara {:.2f}, que excede o limite de 30% do seu salário.'.format(parcelas))
+    print('=-'*19)

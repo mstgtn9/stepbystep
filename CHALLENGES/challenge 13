@@ -1,0 +1,4 @@
+salario = float(input('Digite seu salário: R$'))
+c15 = 15 / 100 * salario
+sf = salario + c15
+print('Seu salário com o bonus será de: R${:.2f} '.format(sf))
